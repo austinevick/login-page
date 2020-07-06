@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #141518;
+    color: #fff;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#right {
+    flex: 1;
+}
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 2rem;
+}
+
+#signin h1 {
+    margin-bottom: 2vh;
+    color: white;
+    font-weight: 700;
+    transition: ease-in-out 1.8s;
+}
+
+#signing .logo img {
+    width: 300px;
+}
+
+#signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#signin .primary-btn {
+    width: 100%;
+}
+
+.primary-btn:hover {
+    background: #ff7b30;
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    background: red;
+    height: 2.7rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#signin .secondary-btn,
+.or,
+.links {
+    width: 60%;
+}
+
+#signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #555;
+    padding: 0.5rem 1rem;
+    background: #181818;
+    color: white;
+    line-height: 1.3rem;
+}
+
+#signin .links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+#signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+#signin .or span {
+    color: #ccc;
+    padding: 15px;
+}
+
+#showcase {
+    background: url('image/img.jpg') no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#showcase .showcase-text {
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn {
+    width: 60%;
+    margin: auto;
+}
+
+#main-footer {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 5rem;
+}
+
+#main-footer a {
+    color: #ff7b30;
+    text-decoration: underline;
+}
+
+.secondary-btn:hover {
+    background: #ff7b30;
+}
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    background: rgb(111, 0, 255);
+    height: 2.7rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+@media(min-width: 1200px) {
+    #left {
+        flex: 4;
+    }
+    #right {
+        flex: 6;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+    #right {
+        display: none;
+    }
+    #left {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+    #signin .logo {
+        margin-bottom: 2vh;
+    }
+    #signin .text-input {
+        margin-bottom: 0.7rem;
+    }
+    #main-footer {
+        padding-top: 1rem;
+    }
+}
